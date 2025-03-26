@@ -21,7 +21,7 @@
     <li>A CLI project that demonstrates the difference in performance between a range of implemented sorting algorithms by measuring time-taken against a range of datasets.</li>
     <li>Stack: C#</li>
   </ul>
-  <li><a href="https://github.com/thomaslbarber/SortingAlgorithmsComparison/tree/master">LED & Button Reaction Game</a></li>
+  <li><a href="https://github.com/thomaslbarber/ArduinoReactionTimeGame">LED & Button Reaction Game</a></li>
     <ul>
     <li>A small game where the player presses a button when notified to measure their reaction time, using a physical parts (LED, button, display, breadboard) and a microcontroller.</li>
     <li>Stack: C++, Arduino</li>
