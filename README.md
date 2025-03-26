@@ -13,7 +13,7 @@
 <ul>
   <li><a href="https://github.com/thomaslbarber/GameOfLife/tree/master">Conway's Game Of Life</a></li>
   <ul>
-    <li>The zero-player <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> (by John Conway).</li>
+    <li>Recreated the zero-player <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> (by John Conway).</li>
     <li>Stack: C#, Unity Game Engine</li>
   </ul>
   <li><a href="https://github.com/thomaslbarber/SortingAlgorithmsComparison/tree/master">Sorting Algorithms</a></li>
@@ -21,7 +21,9 @@
     <li>A CLI project that demonstrates the difference in performance between a range of implemented sorting algorithms by measuring time-taken against a range of datasets.</li>
     <li>Stack: C#</li>
   </ul>
+  <li><a href="https://github.com/thomaslbarber/SortingAlgorithmsComparison/tree/master">LED & Button Reaction Game</a></li>
+    <ul>
+    <li>A small game where the player presses a button when notified to measure their reaction time, using a physical parts (LED, button, display, breadboard) and a microcontroller.</li>
+    <li>Stack: C++, Arduino</li>
+  </ul>
 </ul>
-
-
-
