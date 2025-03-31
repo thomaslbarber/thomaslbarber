@@ -91,9 +91,9 @@
 
 <h4>Recent Projects (In Development) 2025-Onwards</h4>
 <ul>
-  <li><a href="https://github.com/thomaslbarber/ai-language-tutor/tree/1.0.0">AI Language Tutor</a></li>
+  <li><a href="https://github.com/thomaslbarber/ai-language-tutor/tree/main">AI Language Tutor</a></li>
     <ul>
-      <li>An interactive AI-powered language learning tool.</li>
+      <li>An interactive AI-powered language learning tool connecting to OpenAI's GPT-4, Whisper, and Text-to-Speech APIs.</li>
     </ul>
   <li>Other recent projects are private for now - stay tuned!</li>
 </ul>
