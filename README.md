@@ -91,7 +91,11 @@
 
 <h4>Recent Projects (In Development) 2025-Onwards</h4>
 <ul>
-  <li>My recent in development projects are private for now - stay tuned!</li>
+  <li><a href="https://github.com/thomaslbarber/pedestrian-crossing-ai/tree/main">AI Language Tutor</a></li>
+    <ul>
+      <li>An interactive AI-powered language learning tool.</li>
+    </ul>
+  <li>Other recent projects are private for now - stay tuned!</li>
 </ul>
 <h4>Older Projects (No Longer In Development), 2021-2024</h4>
 <ul>
