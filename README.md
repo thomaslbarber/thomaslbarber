@@ -91,7 +91,7 @@
 
 <h4>Recent Projects (In Development) 2025-Onwards</h4>
 <ul>
-  <li><a href="https://github.com/thomaslbarber/pedestrian-crossing-ai/tree/main">AI Language Tutor</a></li>
+  <li><a href="https://github.com/thomaslbarber/ai-language-tutor/tree/1.0.0">AI Language Tutor</a></li>
     <ul>
       <li>An interactive AI-powered language learning tool.</li>
     </ul>
