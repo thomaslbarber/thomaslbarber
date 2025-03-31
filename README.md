@@ -94,6 +94,7 @@
   <li><a href="https://github.com/thomaslbarber/ai-language-tutor/tree/main">AI Language Tutor</a></li>
     <ul>
       <li>An interactive AI-powered language learning tool connecting to OpenAI's GPT-4, Whisper, and Text-to-Speech APIs.</li>
+      <li>Stack: Python</li>
     </ul>
   <li>Other recent projects are private for now - stay tuned!</li>
 </ul>
