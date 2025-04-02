@@ -105,6 +105,13 @@
     <li>Train AI Pedestrian Agents to cross a busy street without being hit using Machine Learning!</li>
     <li>Stack: C#, Python, Unity Game Engine, PyTorch, ML-Agents</li>
   </ul>
+  <li><a href="https://github.com/thomaslbarber/procedural-mc-terrain">Procedural Minecraft Terrain Generation</a></li>
+  <ul>
+    <li>A Unity-based procedural terrain generator based on Minecraft, focused on basic voxel rendering and performance optimizations.</li>
+    <li>Uses a chunk-based world system with intelligent face culling for seamless rendering and efficient resource utilization</li>
+    <li>Stack: C#, Unity Game Engine</li>
+  </ul>
+
   <li><a href="https://github.com/thomaslbarber/GameOfLife/tree/master">Conway's Game Of Life</a></li>
   <ul>
     <li>The zero-player <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> (by John Conway), recreated in Unity!</li>
