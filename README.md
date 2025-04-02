@@ -98,7 +98,7 @@
     </ul>
   <li>Other recent projects are private for now - stay tuned!</li>
 </ul>
-<h4>Older Projects (No Longer In Development), 2021-2024</h4>
+<h4>Older Projects (No Longer In Development), 2022-2024</h4>
 <ul>
   <li><a href="https://github.com/thomaslbarber/pedestrian-crossing-ai/tree/main">Pedestrian Crossing AI</a></li>
   <ul>
