@@ -1,5 +1,5 @@
-## Hi 👋, I'm Thomas
-<h3 align="left">Languages and Tools:</h3>
+# Hi 👋 I'm Thomas 👨‍💻
+<h3 align="left">Languages and Tools</h3>
 <h4>Favourites</h4>
 <p align="left"> 
   <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> 
@@ -35,12 +35,6 @@
 </p>
 <h4>Experienced</h4>
 <p>
-  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" title="C" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++" width="40" height="40"/> 
-  </a>
   <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" title="Python" width="40" height="40"/> 
   </a>
@@ -65,15 +59,15 @@
   <a href="https://camunda.com/" target="_blank" rel="noreferrer"> 
     <img src="https://camunda.com/wp-content/uploads/camunda/blog-images/Social-Media-Favicon.jpg" alt="Camunda" title="Camunda" width="40" height="40"/>
   </a>
-  <a href="https://grafana.com" target="_blank" rel="noreferrer"> 
-    <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="Grafana" title="Grafana" width="40" height="40"/> 
-  </a> 
-  <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> 
-    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="Arduino" title="Arduino" width="40" height="40"/> 
-  </a>
 </p>
 <h4>Comfortable With<h4>
 <p>
+  <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" title="C" width="40" height="40"/> 
+  </a> 
+  <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++" width="40" height="40"/> 
+  </a>
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" title="React" width="40" height="40"/> 
   </a> 
@@ -85,6 +79,12 @@
   </a>
   <a href="https://go.dev/" target="_blank" rel="noreferrer">
     <img src="https://miro.medium.com/v2/1*i2skbfmDsHayHhqPfwt6pA.png" alt="Go" title="Go" width="40" height="40"/>
+  </a>
+  <a href="https://grafana.com" target="_blank" rel="noreferrer"> 
+    <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="Grafana" title="Grafana" width="40" height="40"/> 
+  </a>
+  <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> 
+    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="Arduino" title="Arduino" width="40" height="40"/> 
   </a>
 </p>
 <h3 align="left">Public Repositories:</h3>
