@@ -1,9 +1,23 @@
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
-# <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30"> Hi, I'm Thomas!
-A Software Engineer with 3+ years of experience, currently working in the finance industry at <a href="https://www.bny.com/">BNY</a> and based out of the UK.
+<h1 style="display: flex; justify-content: space-between; align-items: center;">
+  <span>
+    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" style="margin-right: 8px;">
+    Hi, I'm Thomas!
+  </span>
+</h1>
+  <a href="https://skillicons.dev">
+   <img src="https://skills.syvixor.com/api/icons?i=csharp,dotnet,angularjs,azure,python,java,sqlserver,swagger,docker,typescript,cpp,grpc,rest,postman&perline=5&radius=65" align="right"/>
+  </a>
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="30">&nbsp; Active Projects
+
+- 👨‍💻 Welcome to my GitHub profile, I'm a Software Engineer with 3+ years of experience, currently working in the finance industry at <a href="https://www.bny.com/">BNY</a>
+- 💻 I'm specialising in backend development with C#/.NET and SQL
+- 🌱 Currently diving into Azure, TypeScript, and software architecture
+- 🌍 Passionate about contributing to open-source and impactful software
+- 🏡 Based out of the United Kingdom
+
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="30"> Active Projects
 #### <a href="https://github.com/thomaslbarber/ai-language-tutor/tree/main">AI Language Tutor</a>
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
@@ -62,5 +76,9 @@ The following projects are no longer in active development.
     <li>A CLI project that demonstrates the difference in performance between a range of implemented sorting algorithms by measuring time-taken against a range of datasets.</li>
   </ul>
 </ul>
+
+## 📬 Connect With Me
+- 💼 [LinkedIn](https://www.linkedin.com/in/thomaslbarber/)  
+- 📧 thomaslbarber.dev@gmail.com
 
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
