@@ -28,13 +28,10 @@ The following projects are no longer in active development.
 ### Repositories
 #### <a href="https://github.com/thomaslbarber/pedestrian-crossing-ai/tree/main">Pedestrian Crossing AI</a>
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
-![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-
+![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
   <ul>
     <li>Train AI Pedestrian Agents to cross a busy street without being hit using Machine Learning! Takes advantage of the <a href="https://github.com/Unity-Technologies/ml-agents">ML-Agents toolkit</a> provided by Unity.</li>
-    <li>Stack: C#, Python, Unity Game Engine, PyTorch, ML-Agents</li>
   </ul>
   
 #### <a href="https://github.com/thomaslbarber/procedural-mc-terrain">Procedural Minecraft Terrain Generation</a>
@@ -43,7 +40,6 @@ The following projects are no longer in active development.
   <ul>
     <li>A Unity-based procedural terrain generator based on Minecraft, focused on basic voxel rendering and performance optimizations.</li>
     <li>Uses a chunk-based world system with intelligent face culling for seamless rendering and efficient resource utilization</li>
-    <li>Stack: C#, Unity Game Engine</li>
   </ul>
 
 #### <a href="https://github.com/thomaslbarber/GameOfLife/tree/master">Conway's Game Of Life</a>
@@ -51,7 +47,6 @@ The following projects are no longer in active development.
 ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
   <ul>
     <li>The zero-player <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> (by John Conway), recreated in Unity!</li>
-    <li>Stack: C#, Unity Game Engine</li>
   </ul>
   
 #### <a href="https://github.com/thomaslbarber/ArduinoReactionTimeGame">LED & Button Reaction Game</a>
@@ -59,14 +54,12 @@ The following projects are no longer in active development.
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
   <ul>
     <li>A small game where the player presses a button when notified to measure their reaction time, using a physical parts (LED, button, display, breadboard) and a microcontroller.</li>
-    <li>Stack: C++, Arduino</li>
   </ul>
   
 #### <a href="https://github.com/thomaslbarber/SortingAlgorithmsComparison/tree/master">Sorting Algorithms</a>
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
   <ul>
     <li>A CLI project that demonstrates the difference in performance between a range of implemented sorting algorithms by measuring time-taken against a range of datasets.</li>
-    <li>Stack: C#</li>
   </ul>
 </ul>
 
