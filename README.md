@@ -33,6 +33,7 @@
     <li>An interactive AI-powered language learning tool that connects to OpenAI's GPT-4, Whisper, and Text-to-Speech APIs to provide a natural conversational partner at a targeted level.</li>
   </ul>
 
+<br/>
 Other in-development projects are private for now - stay tuned! ⏰
 
 ## <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3lqZTJzaGIzZDgycXl5NzR5YWdscHYxajNvemlqbnRobXYxNGtrcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WxWkMY0ldOvihb5LkF/giphy.gif" width="45" style="margin: 50%; display: block;"> Extras
