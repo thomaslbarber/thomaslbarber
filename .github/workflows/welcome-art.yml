@@ -31,7 +31,7 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
 
       - name: Install github-spray
-        run: npm install github:Annihil/github-spray#master
+        run: npm install github-spray
 
       - name: Calculate start date
         id: startdate
