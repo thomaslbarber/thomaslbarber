@@ -11,10 +11,16 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      - name: Clear previous art
+        run: |
+          git init art-clean
+          cd art-clean
+          git remote add origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/thomaslbarber/contributions-art.git
+          git fetch origin
+          git checkout --orphan tmp
+          git rm -rf .
+          git commit --allow-empty -m "reset history"
+          git push origin --mirror --force
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -37,9 +43,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          npx github-spray -t "welcome!" \
-            --multiplier 10 \
-            --push \
-            --force \
-            --font mario \
-            --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
+          for i in {1..6}; do
+            echo "=== Running spray iteration $i ==="
+            if [ $i -eq 1 ]; then
+              npx github-spray -t "welcome!" \
+                --multiplier 6 \
+                --push \
+                --force \
+                --font mario \
+                --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
+            else
+              npx github-spray -t "welcome!" \
+                --multiplier 6 \
+                --push \
+                --font mario \
+                --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
+            fi
+          done
