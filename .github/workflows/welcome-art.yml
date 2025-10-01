@@ -42,7 +42,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           npx github-spray -t "welcome!" \
-            --multiplier 50 \
+            --multiplier 5 \
             --push \
             --force \
             --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
