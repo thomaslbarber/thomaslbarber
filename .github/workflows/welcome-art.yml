@@ -57,6 +57,7 @@ jobs:
               --font mario \
               --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
 
+            sleep 7
             git fetch origin master
 
             LOCAL=$(git rev-parse HEAD)
