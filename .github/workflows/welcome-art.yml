@@ -56,6 +56,16 @@ jobs:
               --push \
               --font mario \
               --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
-              
+
+                  git fetch origin master
+
+            LOCAL=$(git rev-parse @)
+            REMOTE=$(git rev-parse @{u} 2>/dev/null || echo $LOCAL)
+            BASE=$(git merge-base @ @{u} 2>/dev/null || echo $LOCAL)
+            
+            AHEAD=$(git rev-list --count $BASE..$LOCAL)
+            BEHIND=$(git rev-list --count $BASE..$REMOTE)
+            echo "Local branch is $AHEAD commits ahead, $BEHIND commits behind remote"
+            
             git pull origin master
           done
