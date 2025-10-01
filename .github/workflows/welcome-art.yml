@@ -11,6 +11,15 @@ jobs:
       contents: write
 
     steps:
+      - name: Configure Git author
+        run: |
+          git config --global user.name "${NAME}"
+          git config --global user.email "${EMAIL}"
+          git config --global init.defaultBranch "master"
+        env:
+          NAME: ${{ secrets.NAME }}
+          EMAIL: ${{ secrets.EMAIL }}
+    
       - name: Clear previous art
         run: |
           git init art-clean
@@ -26,15 +35,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-
-      - name: Configure Git author
-        run: |
-          git config --global user.name "${NAME}"
-          git config --global user.email "${EMAIL}"
-          git config --global init.defaultBranch "master"
-        env:
-          NAME: ${{ secrets.NAME }}
-          EMAIL: ${{ secrets.EMAIL }}
 
       - name: Install github-spray
         run: npm install github-spray
