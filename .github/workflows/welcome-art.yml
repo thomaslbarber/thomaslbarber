@@ -41,5 +41,5 @@ jobs:
             --multiplier 10 \
             --push \
             --force \
-            --font mario
+            --font mario \
             --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
