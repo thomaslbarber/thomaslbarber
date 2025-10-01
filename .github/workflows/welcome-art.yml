@@ -51,7 +51,6 @@ jobs:
             npx github-spray -t "welcome!" \
               --multiplier 6 \
               --push \
-              --force \
               --font mario \
               --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
           done
