@@ -43,7 +43,8 @@ jobs:
         run: |
           npx github-spray -t "welcome!" \
             --startdate $START_DATE \
-            --multiplier 10 \
+            --multiplier 50 \
             --push \
             --force \
+            --font mario \
             --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
