@@ -1,8 +1,8 @@
 name: Recycle Welcome Art
 
 on:
-  workflow_dispatch: # manual trigger
-  push:              # optional
+  workflow_dispatch: 
+  push:
 
 jobs:
   commit-art:
