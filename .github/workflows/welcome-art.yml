@@ -5,27 +5,38 @@ on:
   push:
 
 jobs:
-  commit-art:
+  welcome-art:
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # full history needed for github-spray
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20"
+          node-version: '20'
+
+      - name: Configure Git author
+        run: |
+          git config --global user.name "${MY_NAME}"
+          git config --global user.email "${MY_EMAIL}"
+        env:
+          MY_NAME: ${{ secrets.NAME }}
+          MY_EMAIL: ${{ secrets.EMAIL }}
 
       - name: Install github-spray
         run: npm install github-spray
 
-      - name: Generate welcome art
+      - name: Generate contribution art
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           npx github-spray -t "welcome!" \
             --multiplier 10 \
             --push \
-            --origin "https://github.com/thomaslbarber/thomaslbarber.git"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/thomaslbarber.git"
