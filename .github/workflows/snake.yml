@@ -1,8 +1,10 @@
 name: Generate Snake Animation
 
 on:
-  push:
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Recycle Welcome Art"]
+    types:
+      - completed
 
 jobs:
   snake:

@@ -23,7 +23,7 @@ jobs:
 
       - name: Generate welcome art
         run: |
-          npx github-spray -t "WELCOME!" \
+          npx github-spray -t "welcome!" \
             --multiplier 10 \
             --push \
             --origin "https://github.com/thomaslbarber/thomaslbarber.git"
