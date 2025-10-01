@@ -1,7 +1,7 @@
 <img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
 
-![My Alt Text](dist/github-snake.svg#gh-light-mode-only)
-![My Alt Text](dist/github-snake-dark.svg#gh-dark-mode-only)
+<img src="dist/github-snake.svg#gh-light-mode-only" alt="Light-mode Welcome Message" style="width:100%;">
+<img src="dist/github-snake-dark.svg#gh-dark-mode-only" alt="Dark-mode Welcome Message" style="width:100%;">
 
 <h1 style="display: flex; justify-content: space-between; align-items: center;">
   <span>
