@@ -45,18 +45,10 @@ jobs:
         run: |
           for i in {1..6}; do
             echo "=== Running spray iteration $i ==="
-            if [ $i -eq 1 ]; then
-              npx github-spray -t "welcome!" \
-                --multiplier 6 \
-                --push \
-                --force \
-                --font mario \
-                --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
-            else
-              npx github-spray -t "welcome!" \
-                --multiplier 6 \
-                --push \
-                --font mario \
-                --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
-            fi
+            npx github-spray -t "welcome!" \
+              --multiplier 6 \
+              --push \
+              --force \
+              --font mario \
+              --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
           done
