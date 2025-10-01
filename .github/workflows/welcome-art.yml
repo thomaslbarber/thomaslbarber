@@ -59,9 +59,9 @@ jobs:
 
             git fetch origin master
 
-            LOCAL=$(git rev-parse @)
-            REMOTE=$(git rev-parse @{u} 2>/dev/null || echo $LOCAL)
-            BASE=$(git merge-base @ @{u} 2>/dev/null || echo $LOCAL)
+            LOCAL=$(git rev-parse HEAD)
+            REMOTE=$(git rev-parse @{u})
+            BASE=$(git merge-base HEAD @{u})
             
             AHEAD=$(git rev-list --count $BASE..$LOCAL)
             BEHIND=$(git rev-list --count $BASE..$REMOTE)
