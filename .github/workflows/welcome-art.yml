@@ -33,16 +33,13 @@ jobs:
       - name: Install github-spray
         run: npm install github-spray
 
-      - name: Calculate start date
-        id: startdate
-        run: echo "START_DATE=$(date -d '1 year ago' +%Y-%m-%d)" >> $GITHUB_ENV
-
       - name: Generate contribution art
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           npx github-spray -t "welcome!" \
-            --multiplier 5 \
+            --multiplier 10 \
             --push \
             --force \
+            --font mario
             --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
