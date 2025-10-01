@@ -27,8 +27,8 @@ jobs:
           git config --global user.email "${EMAIL}"
           git config --global init.defaultBranch "main"
         env:
-          MY_NAME: ${{ secrets.NAME }}
-          MY_EMAIL: ${{ secrets.EMAIL }}
+          NAME: ${{ secrets.NAME }}
+          EMAIL: ${{ secrets.EMAIL }}
 
       - name: Install github-spray
         run: npm install github:Annihil/github-spray#master
