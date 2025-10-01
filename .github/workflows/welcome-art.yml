@@ -70,7 +70,10 @@ jobs:
             
             npx github-spray -t "welcome!" \
               --multiplier 6 \
-              --push \
               --font mario \
               --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
+
+            git diff
+
+            git push 
           done
