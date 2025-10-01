@@ -46,7 +46,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          git clone https://x-access-token:$GITHUB_TOKEN@github.com/user/contributions-art.git
+          git clone https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git
           cd contributions-art
           for i in {1..6}; do
             echo "=== Running spray iteration $i ==="
