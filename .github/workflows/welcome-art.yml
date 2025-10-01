@@ -73,6 +73,7 @@ jobs:
               --font mario \
               --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
 
+            ls
             git diff
 
             git push 
