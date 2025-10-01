@@ -40,4 +40,5 @@ jobs:
           npx github-spray -t "welcome!" \
             --multiplier 10 \
             --push \
+            --force \
             --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/thomaslbarber.git"
