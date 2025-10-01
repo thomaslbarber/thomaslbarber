@@ -49,25 +49,13 @@ jobs:
           git clone https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git
           cd contributions-art
 
-          DEFAULT_BRANCH="master"
-          
-          if ! git ls-remote --heads origin "$DEFAULT_BRANCH" | grep -q "$DEFAULT_BRANCH"; then
-              echo "Remote is empty — creating $DEFAULT_BRANCH branch"
-              git checkout --orphan "$DEFAULT_BRANCH"
-              git commit --allow-empty -m "initial commit"
-              git push -u origin "$DEFAULT_BRANCH"
-          else
-              git checkout "$DEFAULT_BRANCH"
-              git pull origin "$DEFAULT_BRANCH"
-          fi
-          
           for i in {1..6}; do
             echo "=== Running spray iteration $i ==="
-            git pull origin "$DEFAULT_BRANCH"
-
             npx github-spray -t "welcome!" \
               --multiplier 6 \
               --push \
               --font mario \
               --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
+              
+            git pull origin master
           done
