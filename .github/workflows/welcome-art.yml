@@ -76,5 +76,9 @@ jobs:
             ls
             git diff
 
-            git push 
+          done
+
+          for folder in */; do
+            ls
+            git push origin master
           done
