@@ -48,6 +48,10 @@ jobs:
         run: |
           for i in {1..6}; do
             echo "=== Running spray iteration $i ==="
+            git fetch origin master
+            git checkout master
+            git reset --soft origin/master
+
             npx github-spray -t "welcome!" \
               --multiplier 6 \
               --push \
