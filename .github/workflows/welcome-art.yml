@@ -50,7 +50,7 @@ jobs:
           git clone https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git
           cd contributions-art
           
-          for i in {1..2}; do
+          for i in {1..6}; do
             echo "=== Running spray iteration $i ==="
             if [ "$i" -ne 1 ]; then
               sleep 5
@@ -75,7 +75,6 @@ jobs:
 
             ls
             git diff
-
           done
 
           for folder in */; do
@@ -85,4 +84,5 @@ jobs:
             git pull --rebase origin master
             ls
             git push origin master
+            cd ..
           done
