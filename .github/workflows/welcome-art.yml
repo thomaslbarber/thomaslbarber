@@ -41,4 +41,4 @@ jobs:
             --multiplier 10 \
             --push \
             --force \
-            --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/thomaslbarber.git"
+            --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
