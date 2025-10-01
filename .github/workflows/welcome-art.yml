@@ -51,22 +51,25 @@ jobs:
 
           for i in {1..6}; do
             echo "=== Running spray iteration $i ==="
+            if [ "$i" -ne 1 ]; then
+              sleep 5
+          
+              git fetch origin master
+              AHEAD=$(git rev-list --count HEAD..origin/master)
+              BEHIND=$(git rev-list --count origin/master..HEAD)
+              echo "Local branch is $AHEAD commits ahead, $BEHIND commits behind remote"
+              
+              git pull origin master
+          
+              LOCAL=$(git rev-parse HEAD)
+              REMOTE=$(git rev-parse origin/master)
+              echo "Local HEAD: $LOCAL"
+              echo "Remote HEAD: $REMOTE"
+            fi
+            
             npx github-spray -t "welcome!" \
               --multiplier 6 \
               --push \
               --font mario \
               --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
-
-            sleep 7
-            git fetch origin master
-
-            LOCAL=$(git rev-parse HEAD)
-            REMOTE=$(git rev-parse @{u})
-            BASE=$(git merge-base HEAD @{u})
-            
-            AHEAD=$(git rev-list --count $BASE..$LOCAL)
-            BEHIND=$(git rev-list --count $BASE..$REMOTE)
-            echo "Local branch is $AHEAD commits ahead, $BEHIND commits behind remote"
-            
-            git pull origin master
           done
