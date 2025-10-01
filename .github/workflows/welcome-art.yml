@@ -80,7 +80,9 @@ jobs:
 
           for folder in */; do
             echo "=== Processing $folder ==="
-            cd "$folder"             
+            cd "$folder"
+            git fetch origin
+            git pull --rebase origin master
             ls
             git push origin master
           done
