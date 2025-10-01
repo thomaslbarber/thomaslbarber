@@ -27,11 +27,9 @@ jobs:
           git remote add origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/thomaslbarber/contributions-art.git
           git fetch origin
           git checkout --orphan tmp
-          # remove everything if any files exist
           git rm -rf . || true
           git commit --allow-empty -m "reset history"
-          # replace all refs with this empty commit
-          git push origin --mirror --force
+          git push origin tmp:master --force
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
