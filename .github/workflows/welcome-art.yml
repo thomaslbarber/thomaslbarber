@@ -22,15 +22,18 @@ jobs:
     
       - name: Clear previous art
         run: |
-          git init art-clean
-          cd art-clean
-          git remote add origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/thomaslbarber/contributions-art.git
-          git fetch origin
-          git checkout --orphan tmp
-          git rm -rf . || true
-          git commit --allow-empty -m "reset history"
-          git push origin tmp:master --force
+          curl -s -X DELETE \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            https://api.github.com/repos/thomaslbarber/contributions-art || true
 
+          curl -s -X POST \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/user/repos \
+            -d '{"name":"contributions-art","private":false,"auto_init":false}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+            
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
