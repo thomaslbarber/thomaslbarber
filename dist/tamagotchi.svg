@@ -3,7 +3,7 @@
   <rect width="100%" height="100%" fill="white"/>
 
   <!-- Animated sprite (could be GIF or a frame from your animation) -->
-  <image href="sprite.gif" x="50" y="40" width="64" height="64" />
+  <image href="New Piskel(2).gif" x="50" y="40" width="64" height="64" />
 
   <!-- Dynamic text placeholder -->
   <text x="10" y="20" font-size="14" font-family="monospace" fill="black">
