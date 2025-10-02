@@ -4,7 +4,10 @@ on:
   schedule:
     - cron: "0 * * * *"   # every hour
   workflow_dispatch:      # manual run
-
+  push:
+    branches:
+      - feature/tamagotchi
+      
 jobs:
   update-svg:
     runs-on: ubuntu-latest
