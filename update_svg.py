@@ -16,7 +16,7 @@ commits = r.json()
 
 commit_count = len(commits)
 
-with open("dist/tamagotchi.svg", "r") as f:
+with open("tamagotchi.svg", "r") as f:
     svg = f.read()
 
 print(svg)
@@ -24,5 +24,5 @@ print(svg)
 svg = svg.replace("{{COMMITS}}", str(commit_count))
 print(svg)
 
-with open("tamagotchi-out.svg", "w") as f:
+with open("dist/tamagotchi.svg", "w") as f:
     f.write(svg)
