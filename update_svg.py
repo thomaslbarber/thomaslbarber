@@ -20,12 +20,12 @@ commits = r.json()
 commit_count = len(commits)
 
 # Read template
-with open("dist/tamagotchi.svg", "r") as f:
+with open("tamagotchi.svg", "r") as f:
     svg = f.read()
 
 # Replace placeholder
 svg = svg.replace("{{COMMITS}}", str(commit_count))
 
 # Write updated SVG
-with open("tamagotchi.svg", "w") as f:
+with open("dist/tamagotchi.svg", "w") as f:
     f.write(svg)
