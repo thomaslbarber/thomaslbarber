@@ -21,5 +21,5 @@ with open("tamagotchi.svg", "r") as f:
 
 svg = svg.replace("{{COMMITS}}", str(commit_count))
 
-with open("dist/tamagotchi.svg", "w") as f:
+with open("tamagotchi-out.svg", "w") as f:
     f.write(svg)
