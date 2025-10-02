@@ -84,7 +84,7 @@ The following projects are legacy and no longer in active development, but are c
   </ul>
 </ul>
 
-## 📬 Connect With Me
+## <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmhlenJpN3I5eHhuazFpaTB5c3E2NmE2OGgwYXQzaGl4c201MjJoaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tE3GMQendYTJAh6Cmt/giphy.gif" width = "30"> Connect With Me
 - 💼 [LinkedIn](https://www.linkedin.com/in/thomaslbarber/)  
 - 📧 thomaslbarber.dev@gmail.com
 
