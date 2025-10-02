@@ -16,7 +16,7 @@ commits = r.json()
 
 commit_count = len(commits)
 
-with open("dist/tamagotchia.svg", "r") as f:
+with open("dist/tamagotchi.svg", "r") as f:
     svg = f.read()
 
 print(svg)
