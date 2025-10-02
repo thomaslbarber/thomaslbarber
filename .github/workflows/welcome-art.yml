@@ -2,7 +2,6 @@ name: Recycle Welcome Art
 
 on:
   workflow_dispatch: 
-  push:
 
 jobs:
   welcome-art:
