@@ -20,7 +20,7 @@ commits = r.json()
 commit_count = len(commits)
 
 # Read template
-with open("tamagotchi.svg", "r") as f:
+with open("dist/tamagotchi.svg", "r") as f:
     svg = f.read()
 
 # Replace placeholder
