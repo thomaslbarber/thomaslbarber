@@ -19,10 +19,11 @@ commit_count = len(commits)
 with open("tamagotchi.svg", "r") as f:
     svg = f.read()
 
-print(svg)
+print("From:/n" + svg)
 
 svg = svg.replace("{{COMMITS}}", str(commit_count))
-print(svg)
+
+print("To:/n" + svg)
 
 with open("dist/tamagotchi.svg", "w") as f:
     f.write(svg)
