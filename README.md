@@ -4,11 +4,8 @@
     📬 Connect With Me
 </h2>
 <div>
-    <img src="dist/tamagotchi.svg" width="160" align="right">
-    <br/>
-    <div style="background-color: white">
-      <img src="New Piskel(2)(2).gif" width="160" align="right">
-    </div>
+<br/>
+  <img src="tamagotchi.gif" width="160" align="right">
 </div>
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/thomaslbarber/)
