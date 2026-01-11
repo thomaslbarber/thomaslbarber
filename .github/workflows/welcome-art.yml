@@ -1,6 +1,8 @@
 name: Recycle Welcome Art
 
 on:
+  schedule:
+    - cron: '0 20 * * *'
   workflow_dispatch: 
   push:
 
@@ -11,38 +13,78 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # full history needed for github-spray
+      - name: Configure Git author
+        run: |
+          git config --global user.name "${NAME}"
+          git config --global user.email "${EMAIL}"
+          git config --global init.defaultBranch "master"
+        env:
+          NAME: ${{ secrets.NAME }}
+          EMAIL: ${{ secrets.EMAIL }}
+    
+      - name: Clear previous art
+        run: |
+          curl -s -X DELETE \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            https://api.github.com/repos/thomaslbarber/contributions-art || true
 
+          curl -s -X POST \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/user/repos \
+            -d '{"name":"contributions-art","private":false,"auto_init":true}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+            
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      - name: Configure Git author
-        run: |
-          git config --global user.name "${MY_NAME}"
-          git config --global user.email "${MY_EMAIL}"
-          git config --global init.defaultBranch "main"
-        env:
-          MY_NAME: ${{ secrets.NAME }}
-          MY_EMAIL: ${{ secrets.EMAIL }}
-
       - name: Install github-spray
-        run: npm install github:Annihil/github-spray#master
-
-      - name: Calculate start date
-        id: startdate
-        run: echo "START_DATE=$(date -d '1 year ago' +%Y-%m-%d)" >> $GITHUB_ENV
+        run: npm install github-spray
 
       - name: Generate contribution art
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          npx github-spray -t "welcome!" \
-            --startdate $START_DATE \
-            --multiplier 10 \
-            --push \
-            --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
+          rm -rf contributions-art
+          git clone https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git
+          cd contributions-art
+          
+          for i in {1..6}; do
+            echo "=== Running spray iteration $i ==="
+            if [ "$i" -ne 1 ]; then
+              sleep 5
+          
+              git fetch origin master
+              AHEAD=$(git rev-list --count HEAD..origin/master)
+              BEHIND=$(git rev-list --count origin/master..HEAD)
+              echo "Local branch is $AHEAD commits ahead, $BEHIND commits behind remote"
+              
+              git pull origin master
+          
+              LOCAL=$(git rev-parse HEAD)
+              REMOTE=$(git rev-parse origin/master)
+              echo "Local HEAD: $LOCAL"
+              echo "Remote HEAD: $REMOTE"
+            fi
+            
+            npx github-spray -t "welcome!" \
+              --multiplier 6 \
+              --font mario \
+              --origin "https://x-access-token:${GITHUB_TOKEN}@github.com/thomaslbarber/contributions-art.git"
+
+            ls
+            git diff
+          done
+
+          for folder in */; do
+            echo "=== Processing $folder ==="
+            cd "$folder"
+            git fetch origin
+            git pull --rebase origin master
+            ls
+            git push origin master
+            cd ..
+          done
